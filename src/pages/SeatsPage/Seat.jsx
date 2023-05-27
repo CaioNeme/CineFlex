@@ -9,19 +9,19 @@ export default function Seat(props) {
   return (
     <>
       {props.isAvailable === false && (
-        <SeatItemYellow onClick={() => alert("Esse assento não está disponível")}>
+        <SeatItemYellow data-test="seat" onClick={() => alert("Esse assento não está disponível")}>
           {name}
         </SeatItemYellow>
       )}
       {props.isAvailable === true && (verde == true ?
-        <SeatItemGreen onClick={() => {
+        <SeatItemGreen data-test="seat" onClick={() => {
           setVerde(false);
           setIdReservados(idReservados.filter(a => a !== id));
           setNReservados(nReservados.filter(b => b !== name));
         }}>
           {name}
         </SeatItemGreen> :
-        <SeatItemGrey onClick={() => {
+        <SeatItemGrey data-test="seat" onClick={() => {
           setVerde(true);
           setIdReservados([...idReservados, id]);
           setNReservados([...nReservados, name]);
