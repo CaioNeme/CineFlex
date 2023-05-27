@@ -114,10 +114,10 @@ export default function SeatsPage(props) {
 
       }}>
         <label htmlFor="nome"> Nome do Comprador:</label>
-        <input data-test="client-name" type="text" id="nome" placeholder="Digite seu nome..." onChange={(event) => { setNome(event.target.value) }} />
+        <input required data-test="client-name" type="text" id="nome" placeholder="Digite seu nome..." onChange={(event) => { setNome(event.target.value) }} />
 
         <label htmlFor="cpf"> CPF do Comprador:</label>
-        <input data-test="client-cpf" type="number" id="cpf" placeholder="Digite seu CPF..." onChange={(event) => { setCpf(event.target.value) }} />
+        <input required data-test="client-cpf" type="number" id="cpf" placeholder="Digite seu CPF..." onChange={(event) => { setCpf(event.target.value) }} />
 
         <button data-test="book-seat-btn">Reservar Assento(s)</button>
       </FormContainer>
