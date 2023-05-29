@@ -7,7 +7,7 @@ import SuccessPage from "./pages/SuccessPage/SuccessPage"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { useState } from "react"
 
-axios.defaults.headers.common['Authorization'] = '6cLwurMhkqSYp2B7N9lEmRqW';
+axios.defaults.headers.common['Authorization'] = '5nQ6DjwFkV8ZTXHmGxYKeIW7';
 
 export default function App() {
 
